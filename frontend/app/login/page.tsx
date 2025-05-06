@@ -75,32 +75,32 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen bg-gray-100 ">
       {/* Left Illustration */}
-      <div className="hidden lg:flex w-1/2 bg-white items-center justify-center p-5">
-        <div className="text-center">
+      <div className="hidden lg:flex w-1/2 bg-gray-100  items-center justify-center p-5">
+        <div className="text-center translate-y-[-1rem]">
           <Image
             src="/logo.png"
             alt="TRACKWORTH Logo"
-            width={280}
+            width={230}
             height={80}
-            className="mb-[4rem] m-auto"
+            className="mb-[2rem] m-auto"
           />
-          <div className="relative w-[550px] h-[420px] mx-auto">
+          <div className="relative w-[430px] h-[350px] mx-auto">
             <img src="/final.svg" alt="auth page" className="w-[550px]" />
           </div>
-          <h2 className="text-3xl font-semibold mb-2">Smart finance companion for students</h2>
-          <p className="text-gray-600 text-xl">Easily manage your income, expenses, and savings. <br /> Get personalized insights and grow your net worth with AI.</p>
+          <h2 className="text-2xl font-semibold mb-2">Smart finance companion for students</h2>
+          <p className="text-gray-600 text-m">Easily manage your income, expenses, and savings. <br /> Get personalized insights and grow your net worth with AI.</p>
         </div>
       </div>
 
       {/* Right Form */}
       <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center px-8 py-12 sm:px-16 md:px-24">
         <div className="max-w-md w-full mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-[1rem]">
+          <h2 className="text-2xl font-bold text-gray-800 mb-[0.6rem]">
             {mode === 'login' ? 'Welcome back!' : 'Create your account'}
           </h2>
-          <p className="text-xl text-gray-500 mb-6">
+          <p className="text-m text-gray-500 mb-6">
             Start managing your finance faster and better
           </p>
 
@@ -120,7 +120,7 @@ export default function LoginPage() {
               <input
                 type="text"
                 placeholder="Full name"
-                className="w-full px-4 py-5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
               />
@@ -128,14 +128,14 @@ export default function LoginPage() {
             <input
               type="email"
               placeholder="you@example.com"
-              className="w-full px-4 py-5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               placeholder="At least 8 characters"
-              className="w-full px-4 py-5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -143,7 +143,7 @@ export default function LoginPage() {
               <input
                 type="password"
                 placeholder="Confirm password"
-                className="w-full px-4 py-5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={confirm}
                 onChange={(e) => setConfirm(e.target.value)}
               />
@@ -157,7 +157,7 @@ export default function LoginPage() {
             </div>
             <button
               onClick={handleAuth}
-              className="w-full bg-[#3459E2] hover:bg-blue-500 text-white py-5 rounded-lg transition font-medium"
+              className="w-full bg-[#3459E2] hover:bg-blue-500 text-white py-4 rounded-lg transition font-medium"
             >
               {mode === 'signup' ? 'Create Account' : 'Login'}
             </button>
@@ -172,7 +172,7 @@ export default function LoginPage() {
           <div className="mt-4 flex flex-col gap-3">
             <button
               onClick={handleGoogleSignIn}
-              className="flex items-center justify-center w-full gap-3 bg-white border border-gray-300 rounded-lg py-4 px-4 hover:shadow-md transition"
+              className="flex items-center justify-center w-full gap-3 bg-white border border-gray-300 rounded-lg py-3 px-4 hover:shadow-md transition"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-6 h-6">
                 <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
@@ -187,7 +187,7 @@ export default function LoginPage() {
             {/* Facebook Placeholder */}
             <button
               disabled
-              className="flex items-center justify-center w-full gap-3 bg-gray-100 border border-gray-300 rounded-lg py-4 px-4 text-gray-400 cursor-not-allowed"
+              className="flex items-center justify-center w-full gap-2 bg-gray-100 border border-gray-300 rounded-lg py-3 px-4 text-gray-400 cursor-not-allowed"
               title="Facebook sign-in coming soon"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#AAB8C2" className="w-6 h-6">

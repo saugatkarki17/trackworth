@@ -83,7 +83,7 @@ export default function UpdateExpensesPage() {
 
   return (
     <div className="w-full min-h-screen bg-gray-50 p-8">
-      <h1 className="text-3xl font-bold text-blue-600 mb-8">💸 Update Your Expenses</h1>
+      <h1 className="text-3xl font-bold text-blue-600 mb-8">Update Your Expenses</h1>
 
       {message && (
         <div className="bg-green-100 text-green-700 px-4 py-2 rounded mb-4">

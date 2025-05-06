@@ -24,8 +24,8 @@ export default function Sidebar() {
     <aside className="w-64 min-h-screen bg-white border-r flex flex-col">
       {/* Top Section */}
       <div className="flex-1 p-6">
-        <h1 className="text-blue-600 font-bold text-2xl mb-8">TrackWorth</h1>
-        <nav className="space-y-2">
+        <h1 className="text-blue-600 font-bold text-2xl p-2 mb-8">TrackWorth</h1>
+        <nav className="space-y-3 ">
           {navItems.map((item) => (
             <Link key={item.path} href={item.path}>
               <div
@@ -46,7 +46,7 @@ export default function Sidebar() {
       <div className="p-4 border-t">
         <button
           onClick={handleLogout}
-          className="w-full text-red-500 border border-red-300 py-2 px-4 rounded-lg hover:bg-red-50 transition"
+          className="w-full text-red-500 border border-red-300 py-3 px-4 mb-6 mt-2 rounded-lg hover:bg-red-50 transition"
         >
           Log out
         </button>
