@@ -86,6 +86,6 @@ Tables:
 
 ## 🙌 Contributors
 
-- Saugat Karki – [@yourgithub](https://github.com/yourgithub)
+- Saugat Karki – 
 
 
