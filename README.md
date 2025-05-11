@@ -33,7 +33,7 @@ TrackWorth is a personalized finance tracking web app for students. It helps use
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/trackworth.git
+git clone https://github.com/saugatkarki17/trackworth.git
 cd trackworth
 ```
 
