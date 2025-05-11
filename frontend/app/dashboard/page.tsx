@@ -36,6 +36,7 @@ ChartJS.register(
   Filler
 );
 
+
 export default function Dashboard() {
   const { user } = useAuth();
   const [monthlyIncome, setMonthlyIncome] = useState(0);

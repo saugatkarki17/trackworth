@@ -1,4 +1,4 @@
-// app/dashboard/income.tsx
+
 "use client";
 import { useState, useEffect } from "react";
 import { supabase } from "@/services/supabaseClient";
@@ -49,10 +49,10 @@ export default function UpdateIncomePage() {
 
     if (!userRow) return;
 
-    // Delete previous finance record (enforces 1 row per user)
+    // Delete previous (only one row per user will exist)
     await supabase.from("finances").delete().eq("user_id", userRow.id);
 
-    // Insert new finance row
+    // add new finance row
     await supabase.from("finances").insert({
       user_id: userRow.id,
       monthly_income: Number(income),
